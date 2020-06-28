@@ -1,36 +1,36 @@
 @font-face {
     font-family: 'MyriadPro-Bold';
-    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Bold.woff') format('woff'), url('MyriadPro-Bold.ttf') format('truetype'), url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyriadPro-Bold';
-    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Bold.otf') format('opentype'),
-        url('MyriadPro-Bold.woff') format('woff'), url('MyriadPro-Bold.ttf') format('truetype'), url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Bold.otf') format('opentype'),
+        url(fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyriadPro-Regular';
-    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Regular.otf') format('opentype'),
-        url('MyriadPro-Regular.woff') format('woff'), url('MyriadPro-Regular.ttf') format('truetype'), url('MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Regular.otf') format('opentype'),
+        url(fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('Montserrat-Bold.woff') format('woff'), url('Montserrat-Bold.ttf') format('truetype'), url('Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyriadPro-Bold';
-    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Bold.woff') format('woff'), url('MyriadPro-Bold.ttf') format('truetype'), url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -2680,8 +2680,8 @@ input#send_but {
     display: none;
 }
 
-.basket-button:hover {
-    color: #fff;
+.basket-button:hover, .basket-button:focus {
+    color: #fff !important;
 }
 
 .disblr {

@@ -1,54 +1,509 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
-    <meta name="viewport" content="target-densitydpi=device-dpi"/>
+    <meta name="viewport" content="target-densitydpi=device-dpi" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=1100">
     <link href="css/responsive-off.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Safer</title>
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
 </head>
+
 <body>
-<div class="wrapper">
-    <header>
-        <div class="cont clearfix">
-            <a href="index.html">
-                <div class="logo"></div>
-            </a>
-
-            <div class="search-f">
-                <form action="#" name="seatchform" method="post">
-                    <div class="sinputt">
-                        <input type="hidden" name="do" value="search">
-                        <input type="hidden" name="subaction" value="search">
-                        <input class="fieldt" name="story" value="Поиск товара..."
-                               onblur="if(this.value=='') this.value='Поиск товара...';"
-                               onfocus="if(this.value=='Поиск товара...') this.value='';" type="text">
-
-                        <div class="submit"></div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="basket-area">
-                <a href="4.html" class="basket-button">
-                    <div class="basket-img"></div>
-                    Корзина
+    <div class="wrapper">
+        <header>
+            <div class="cont clearfix">
+                <a href="index.html">
+                    <div class="logo"></div>
                 </a>
-
-                <div class="basket-price">55500,00 Р</div>
+                <div class="search-f">
+                    <form action="#" name="seatchform" method="post">
+                        <div class="sinputt">
+                            <input type="hidden" name="do" value="search">
+                            <input type="hidden" name="subaction" value="search">
+                            <input class="fieldt" name="story" value="Поиск товара..." onblur="if(this.value=='') this.value='Поиск товара...';" onfocus="if(this.value=='Поиск товара...') this.value='';" type="text">
+                            <div class="submit"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="basket-area">
+                    <a href="4.html" class="basket-button">
+                        <div class="basket-img"></div>
+                        Корзина
+                    </a>
+                    <div class="basket-price">55500,00 Р</div>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <section class="menu-area clearfix">
-        <div class="cont clearfix">
-            <nav>
+        </header>
+        <section class="menu-area clearfix">
+            <div class="cont clearfix">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="active-orange" href="index.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="3.html">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="9.html">Готовые решения</a>
+                        </li>
+                        <li>
+                            <a href="7.html">Примеры применения</a>
+                        </li>
+                        <li>
+                            <a href="1.html">Распродажа</a>
+                        </li>
+                        <li>
+                            <a href="5.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="11.html">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="content-area content-area-gray clearfix">
+            <div class="col-md-12 col-xs-12 col-sm-12 zind zind2">
+                <div class="cont clearfix conty">
+                    <a href="index.html" class="fll blks">Главная</a><span class="fll blks2"> → </span><a class="fll blks nohover-orange">Каталог</a></div>
+            </div>
+            <div class="cont clearfix conty">
+                <div class="cont-left-col clearfix">
+                    <form action="">
+                        <div id="st-accordion" class="st-accordion">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Тип замка
+                                        <span class="st-arrow"></span>
+                                    </a>
+                                    <div class="st-content">
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c1" name="cc">
+                                            <label for="c1">
+                                                <span></span>
+                                                MW DLS
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c2" name="cc">
+                                            <label for="c2">
+                                                <span></span>
+                                                Стандарт
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c3" name="cc">
+                                            <label for="c3">
+                                                <span></span>
+                                                Усиленный стандарт
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Размеры
+                                        <span class="st-arrow"></span>
+                                    </a>
+                                    <div class="st-content">
+                                        <input class="fields2" name="story" value="Высота" onblur="if(this.value=='') this.value='Высота';" onfocus="if(this.value=='Высота') this.value='';" type="text">
+                                        <input class="fields2" name="story" value="Ширина" onblur="if(this.value=='') this.value='Ширина';" onfocus="if(this.value=='Ширина') this.value='';" type="text">
+                                        <input class="fields2" name="story" value="Глубина" onblur="if(this.value=='') this.value='Глубина';" onfocus="if(this.value=='Глубина') this.value='';" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Категория товара
+                                        <span class="st-arrow"></span>
+                                    </a>
+                                    <div class="st-content">
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c4" name="cc">
+                                            <label for="c4">
+                                                <span></span>
+                                                Защитный бокс
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c5" name="cc">
+                                            <label for="c5">
+                                                <span></span>
+                                                Защитная рамка
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c6" name="cc">
+                                            <label for="c6">
+                                                <span></span>
+                                                Аксессуар
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c6s" name="cc">
+                                            <label for="c6s">
+                                                <span></span>
+                                                Съемник
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Область использования
+                                        <span class="st-arrow">Open or Close</span>
+                                    </a>
+                                    <div class="st-content">
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c7" name="cc">
+                                            <label for="c7">
+                                                <span></span>
+                                                Мультимедиа
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c8" name="cc">
+                                            <label for="c8">
+                                                <span></span>
+                                                Электроника
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c9" name="cc">
+                                            <label for="c9">
+                                                <span></span>
+                                                Лезвия и батарейки
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c9s" name="cc">
+                                            <label for="c9s">
+                                                <span></span>
+                                                Косметика и парфюмерия
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c9v" name="cc">
+                                            <label for="c9v">
+                                                <span></span>
+                                                Хозтовары
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c9q" name="cc">
+                                            <label for="c9q">
+                                                <span></span>
+                                                Сигареты
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Встроенный датчик
+                                        <span class="st-arrow">Open or Close</span>
+                                    </a>
+                                    <div class="st-content">
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c10" name="cc">
+                                            <label for="c10">
+                                                <span></span>
+                                                Нет
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c11" name="cc">
+                                            <label for="c11">
+                                                <span></span>
+                                                АМ
+                                            </label>
+                                        </div>
+                                        <div class="ctr-m">
+                                            <input type="checkbox" id="c12" name="cc">
+                                            <label for="c12">
+                                                <span></span>
+                                                РЧ
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons-acc">
+                            <button class="search-shop">Поиск товаров</button>
+                            <button class="remove-filters">Сброс фильтров</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cont-rig-col clearfix">
+                    <div class="form-cv mar-t-f">
+                        <form action="#" name="seatchform" method="post">
+                            <div class="white-bl white-bln clearfix">
+                                <div class="fll">
+                                    <h4 class="fll">Заголовок</h4>
+                                    <h5 class="fll clearfix">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Corrupti sit sint, incidunt officiis quibusdam soluta
+                                        magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sit sint,
+                                        incidunt officiis quibusdam soluta magnam. Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Corrupti sit sint, incidunt officiis quibusdam soluta magnam.</h5>
+                                </div>
+                                <div class="flr mar-nav">
+                                    <div class="right"></div>
+                                    <div class="num">4</div>
+                                    <div class="num">3</div>
+                                    <div class="num">2</div>
+                                    <div class="num active-num">1</div>
+                                    <div class="left"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="no-shop-cont">
+                        <div class="rows">
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rows">
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/5.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rows">
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rows">
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/5.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rows">
+                            <a href="2e.html" class="hidden-media">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html" class="hidden-media">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="2e.html" class="hidden-media ">
+                                <div class="shop element">
+                                    <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
+                                    <div class="shop-txt-area">
+                                        <h3>Tube 165/300 Plastic conical sls</h3>
+                                        <h4>140 x 24 x 24 mm</h4>
+                                        <h5>$570</h5>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <a href="2e.html" class="hidden-media2">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="2e.html" class="hidden-media2">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="2e.html" class="hidden-media2">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                        </a>
+                    </div>
+                    <div class="rows">
+                        <a href="2e.html" class="hidden-media4">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="2e.html" class="hidden-media4">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="2e.html" class="hidden-media4">
+                            <div class="shop element">
+                                <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
+                                <div class="shop-txt-area">
+                                    <h3>Tube 165/300 Plastic conical sls</h3>
+                                    <h4>140 x 24 x 24 mm</h4>
+                                    <h5>$570</h5>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="white-bl-down">
+                <div class="flr mar-nav">
+                    <div class="right"></div>
+                    <div class="num">4</div>
+                    <div class="num">3</div>
+                    <div class="num">2</div>
+                    <div class="num active-num">1</div>
+                    <div class="left"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="menu-footer clearfix">
                 <ul>
                     <li>
                         <a class="active-orange" href="index.html">Каталог</a>
@@ -72,587 +527,110 @@
                         <a href="11.html">Блог</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-    </section>
-
-    <section class="content-area content-area-gray clearfix">
-        <div class="col-md-12 col-xs-12 col-sm-12 zind zind2">
-            <div class="cont clearfix conty">
-                <a href="index.html" class="fll blks">Главная</a><span class="fll blks2"> → </span><a
-                    class="fll blks nohover-orange">Каталог</a></div>
-        </div>
-        <div class="cont clearfix conty">
-            <div class="cont-left-col clearfix">
-                <form action="">
-                    <div id="st-accordion" class="st-accordion">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Тип замка
-                                    <span class="st-arrow"></span>
-                                </a>
-
-                                <div class="st-content">
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c1" name="cc">
-                                        <label for="c1">
-                                            <span></span>
-                                            MW DLS
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c2" name="cc">
-                                        <label for="c2">
-                                            <span></span>
-                                            Стандарт
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c3" name="cc">
-                                        <label for="c3">
-                                            <span></span>
-                                            Усиленный стандарт
-                                        </label>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Размеры
-                                    <span class="st-arrow"></span>
-                                </a>
-
-                                <div class="st-content">
-                                    <input class="fields2" name="story" value="Высота"
-                                           onblur="if(this.value=='') this.value='Высота';"
-                                           onfocus="if(this.value=='Высота') this.value='';" type="text">
-                                    <input class="fields2" name="story" value="Ширина"
-                                           onblur="if(this.value=='') this.value='Ширина';"
-                                           onfocus="if(this.value=='Ширина') this.value='';" type="text">
-                                    <input class="fields2" name="story" value="Глубина"
-                                           onblur="if(this.value=='') this.value='Глубина';"
-                                           onfocus="if(this.value=='Глубина') this.value='';" type="text">
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Категория товара
-                                    <span class="st-arrow"></span>
-                                </a>
-
-                                <div class="st-content">
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c4" name="cc">
-                                        <label for="c4">
-                                            <span></span>
-                                            Защитный бокс
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c5" name="cc">
-                                        <label for="c5">
-                                            <span></span>
-                                            Защитная рамка
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c6" name="cc">
-                                        <label for="c6">
-                                            <span></span>
-                                            Аксессуар
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c6s" name="cc">
-                                        <label for="c6s">
-                                            <span></span>
-                                            Съемник
-                                        </label>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Область использования
-                                    <span class="st-arrow">Open or Close</span>
-                                </a>
-
-                                <div class="st-content">
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c7" name="cc">
-                                        <label for="c7">
-                                            <span></span>
-                                            Мультимедиа
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c8" name="cc">
-                                        <label for="c8">
-                                            <span></span>
-                                            Электроника
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c9" name="cc">
-                                        <label for="c9">
-                                            <span></span>
-                                            Лезвия и батарейки
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c9s" name="cc">
-                                        <label for="c9s">
-                                            <span></span>
-                                            Косметика и парфюмерия
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c9v" name="cc">
-                                        <label for="c9v">
-                                            <span></span>
-                                            Хозтовары
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c9q" name="cc">
-                                        <label for="c9q">
-                                            <span></span>
-                                            Сигареты
-                                        </label>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Встроенный датчик
-                                    <span class="st-arrow">Open or Close</span>
-                                </a>
-
-                                <div class="st-content">
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c10" name="cc">
-                                        <label for="c10">
-                                            <span></span>
-                                            Нет
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c11" name="cc">
-                                        <label for="c11">
-                                            <span></span>
-                                            АМ
-                                        </label>
-                                    </div>
-
-                                    <div class="ctr-m">
-                                        <input type="checkbox" id="c12" name="cc">
-                                        <label for="c12">
-                                            <span></span>
-                                            РЧ
-                                        </label>
-                                    </div>
-
-                                </div>
-                            </li>
-
-                        </ul>
+            </div>
+            <div class="email-area clearfix">
+                <div class="textname">Подписаться на новости</div>
+                <form action="#" name="seatchform" method="post">
+                    <div class="sinputt2">
+                        <input class="fieldt2" name="story" value="E-mail" onblur="if(this.value=='') this.value='E-mail';" onfocus="if(this.value=='E-mail') this.value='';" type="text">
+                        <div class="submit-email"></div>
                     </div>
-
-                    <div class="buttons-acc">
-                        <button class="search-shop">Поиск товаров</button>
-                        <button class="remove-filters">Сброс фильтров</button>
-                    </div>
-
                 </form>
             </div>
-
-            <div class="cont-rig-col clearfix">
-                <div class="form-cv mar-t-f">
-                    <form action="#" name="seatchform" method="post">
-                        <div class="white-bl white-bln clearfix">
-                            <div class="fll">
-
-                                <h4 class="fll">Заголовок</h4>  <h5 class="fll clearfix">Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Corrupti sit sint, incidunt officiis quibusdam soluta
-                                magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sit sint,
-                                incidunt officiis quibusdam soluta magnam. Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Corrupti sit sint, incidunt officiis quibusdam soluta magnam.</h5>
-                            </div>
-                            <div class="flr mar-nav">
-                                <div class="right"></div>
-                                <div class="num">4</div>
-                                <div class="num">3</div>
-                                <div class="num">2</div>
-                                <div class="num active-num">1</div>
-                                <div class="left"></div>
-                            </div>
-
-                        </div>
-
-                    </form>
-                </div>
-                <div class="no-shop-cont">
-                    <div class="rows">
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="rows">
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/5.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="rows">
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="rows">
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/5.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/1.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="rows">
-                        <a href="2e.html" class="hidden-media">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html" class="hidden-media">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="2e.html" class="hidden-media ">
-                            <div class="shop element">
-                                <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
-
-                                <div class="shop-txt-area">
-                                    <h3>Tube 165/300 Plastic conical sls</h3>
-                                    <h4>140 x 24 x 24 mm</h4>
-                                    <h5>$570</h5>
-                                </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="rows">
-                    <a href="2e.html" class="hidden-media2">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="2e.html" class="hidden-media2">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="2e.html" class="hidden-media2">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                    </a>
-                </div>
-
-                <div class="rows">
-                    <a href="2e.html" class="hidden-media4">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/3.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="2e.html" class="hidden-media4">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/4.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="2e.html" class="hidden-media4">
-                        <div class="shop element">
-                            <img class="shop-img" src="img/shop/2.jpg" height="184" width="230" alt="">
-
-                            <div class="shop-txt-area">
-                                <h3>Tube 165/300 Plastic conical sls</h3>
-                                <h4>140 x 24 x 24 mm</h4>
-                                <h5>$570</h5>
-                            </div>
-                    </a>
-                </div>
-
+            <div class="soc-buttons">
+                <a href="#">
+                    <div class="soc1 fll"></div>
+                </a>
+                <a href="#">
+                    <div class="soc2 fll"></div>
+                </a>
+                <a href="#">
+                    <div class="soc3 fll"></div>
+                </a>
             </div>
-
-        </div>
-
-        <div class="white-bl-down">
-
-            <div class="flr mar-nav">
-                <div class="right"></div>
-                <div class="num">4</div>
-                <div class="num">3</div>
-                <div class="num">2</div>
-                <div class="num active-num">1</div>
-                <div class="left"></div>
-            </div>
-
-        </div>
-
-</section>
-
-<footer>
-    <div class="menu-footer clearfix">
-        <ul>
-            <li>
-                <a class="active-orange" href="index.html">Каталог</a>
-            </li>
-            <li>
-                <a href="3.html">Новинки</a>
-            </li>
-            <li>
-                <a href="9.html">Готовые решения</a>
-            </li>
-            <li>
-                <a href="7.html">Примеры применения</a>
-            </li>
-            <li>
-                <a href="1.html">Распродажа</a>
-            </li>
-            <li>
-                <a href="5.html">Контакты</a>
-            </li>
-            <li>
-                <a href="11.html">Блог</a>
-            </li>
-        </ul>
+        </footer>
     </div>
-
-    <div class="email-area clearfix">
-        <div class="textname">Подписаться на новости</div>
-        <form action="#" name="seatchform" method="post">
-            <div class="sinputt2">
-                <input class="fieldt2" name="story" value="E-mail" onblur="if(this.value=='') this.value='E-mail';"
-                       onfocus="if(this.value=='E-mail') this.value='';" type="text">
-
-                <div class="submit-email"></div>
-            </div>
-        </form>
-    </div>
-
-    <div class="soc-buttons">
-        <a href="#">
-            <div class="soc1 fll"></div>
-        </a>
-        <a href="#">
-            <div class="soc2 fll"></div>
-        </a>
-        <a href="#">
-            <div class="soc3 fll"></div>
-        </a>
-    </div>
-</footer>
-
-</div>
 </body>
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/owl.carousel.js" type="text/javascript"></script>
 <script src="js/cs.scripts.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.accordion.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>    
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script src="js/cs.script.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/mwheelIntent.js"></script>
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<!-- github -->
+<a class="github" href="https://github.com/saflex/safer2" target="_blank">
+    <i>Посмотреть другие страницы этого проекта и исходный код можно на <span>github</span></i>
+    <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+    </svg>
+</a>
+<style type="text/css">
+body .github {
+    font-family: 'arial';
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    text-decoration: none;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+}
+
+body .github i {
+    font-style: italic !important;
+    display: block !important;
+    color: #000 !important;
+    opacity: 0.65 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+
+body .github i span {
+    font-weight: 900 !important;
+}
+
+body .github svg {
+    display: block !important;
+    margin-left: 10px !important;
+    opacity: 0.65 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+body .github:hover i,
+body .github:hover svg {
+    opacity: 1 !important;
+}
+
+body .github:hover svg {
+    transform: scale(1.1);
+}
+</style>
+<script type="text/javascript">
+const allLinks = document.querySelectorAll('a');
+const github = document.querySelector('.github');
+for (let elem of allLinks) {
+    if (elem !== github) {
+        elem.onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+}
+</script>
+<!-- github -->
+
 </html>
